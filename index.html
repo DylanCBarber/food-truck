@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Taco Truck</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Leckerli+One&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4c9f2f3963.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap jQuery & Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="title">
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-brand">The Taco Spot</div>
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbar-collapse-button" aria-controls="navbar-collapse-button" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-collapse-button">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#title" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu" class="nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End / Title Begin -->
+        <div class="container-fluid">
+          <div class="row title-row">
+            <div class="col-lg-6 col-sm-12 title-greeting">
+              <h1 class="title-heading">The Taco Spot</h1>
+              <h3 class="title-sub">Open EVERY DAY from 11am - 12am. Come and grab a bite!</h3>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <img class="taco-truck" src="images/food-truck.png" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Contact / Map Section -->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 contact-col">
+            <h3 class="contact-title">How To Find Us</h3>
+            <hr class="contact-hr">
+            <p class="contact-text">We are located at the corner of E 73rd St and Park Avenue in New York, New York.</p>
+            <p class="contact-text">Hours of Operation: 11am - 12am</p>
+            <p class="contact-text">Phone: (212) 555-1234</p>
+            <p class="contact-text">Email: hello@tacospot.com</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var newYork = {lat: 40.771855, lng: -73.963534};
+                var map = new google.maps.Map(
+                document.getElementById("map"), {zoom: 15, center: newYork});
+                var marker = new google.maps.Marker({position: newYork, map: map});
+              };
+            </script>
+          </div>
+        </div>  
+      </div>
+    </section>
+    <!-- Title End / Menu Start -->
+    <section id="menu">
+        <div class="container-fluid">
+          <div class="menu-title-wrapper">
+            <h1 class="menu-title">Check Out Our Menu!</h1>
+          </div>
+          <h3 class="menu-sub taco-sub">Tacos</h3>
+          <hr class="green-hr">
+            <div class="wrapper">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">1. Carnitas Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image taco1">
+                        </div> 
+                      </div>
+                      <div class="card-back red-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Pork tacos absolutely drenched in lime juice and spices.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$5.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">2. Chicken Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image taco2">
+                        </div> 
+                      </div>
+                      <div class="card-back green-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Chicken tacos smothered in our house-made sauce.
+                          </p>
+                          <hr class="red-hr">
+                          <p class="food-price">$3.50</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">3. Steak Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image taco3">
+                        </div> 
+                      </div>
+                      <div class="card-back tan-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Tender slices of juicy steak topped with house-made cilantro.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$6.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">4. Fiesta Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image taco4">
+                        </div> 
+                      </div>
+                      <div class="card-back brown-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            The perfect taco for a party. Spicy as hell but so delicious.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$5.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">5. Shrimp Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image taco5">
+                        </div> 
+                      </div>
+                      <div class="card-back green-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Juicy shrimp on top of a taco. Pretty straight forward.
+                          </p>
+                          <hr class="red-hr">
+                          <p class="food-price">$5.50</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">6. Veggie Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image taco6">
+                        </div> 
+                      </div>
+                      <div class="card-back tan-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Perfectly spiced tofu tacos for the herbivores out there.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$3.50</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">7. Beef Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image taco7">
+                        </div> 
+                      </div>
+                      <div class="card-back brown-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            An oldie but a goodie. Two classic beef and cheese tacos.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$5.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">8. El Diablo Tacos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image taco8">
+                        </div> 
+                      </div>
+                      <div class="card-back red-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Only for the brave-hearted. Ghost pepper tacos with jalapenos.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$7.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="menu-sub">Burritos</h3>
+                <hr class="red-hr">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">1. Chicken Burrito</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image burrito1">
+                        </div> 
+                      </div>
+                      <div class="card-back red-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Like a chicken taco but...you know...in burrito form.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$4.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">2. Veggie Burrito</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image burrito2">
+                        </div> 
+                      </div>
+                      <div class="card-back green-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Spiced and perfectly cooked tofu for our veggie friends.
+                          </p>
+                          <hr class="red-hr">
+                          <p class="food-price">$5.25</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">3. Beef Burrito</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image burrito3">
+                        </div> 
+                      </div>
+                      <div class="card-back tan-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Classic beef burrito with rice and refried beans.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$3.50</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">4. Shrimp Burrito</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image burrito4">
+                        </div> 
+                      </div>
+                      <div class="card-back brown-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Perfectly cooked shrimp with our in-house fiesta sauce.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$6.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="menu-sub">Nachos</h3>
+                <hr class="tan-hr">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">1. Classic Nachos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image nacho1">
+                        </div> 
+                      </div>
+                      <div class="card-back red-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            All that's missing is a ballpark. Classic beef and cheese nachos.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$3.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">2. Loaded Nachos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image nacho2">
+                        </div> 
+                      </div>
+                      <div class="card-back green-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Classic Nachos loaded with avocado, jalapenos and beef.
+                          </p>
+                          <hr class="red-hr">
+                          <p class="food-price">$4.50</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">3. Supreme Nachos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image nacho3">
+                        </div> 
+                      </div>
+                      <div class="card-back tan-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Classic Nachos with lettuce, tomato and extra olives.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$5.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">4. El Diablo Nachos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front bg-dark">
+                        <div class="card-body food-image nacho4">
+                        </div> 
+                      </div>
+                      <div class="card-back brown-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Only for the brave-hearted. Ghost pepper nachos with jalapenos.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$7.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">5. Carnitas Nachos</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image nacho5">
+                        </div> 
+                      </div>
+                      <div class="card-back green-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Classic nachos that substitutes the beef for pork.
+                          </p>
+                          <hr class="red-hr">
+                          <p class="food-price">$6.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <h3 class="food-title">6. Veggie Burrito</h3>
+                    <div class="card card-flip mx-auto">
+                      <div class="card-front">
+                        <div class="card-body food-image nacho6">
+                        </div> 
+                      </div>
+                      <div class="card-back tan-bg">
+                        <div class="card-body">
+                          <p class="card-back-text">
+                            Meat-free nachos for the herbivores out there.
+                          </p>
+                          <hr class="green-hr">
+                          <p class="food-price">$3.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu End / Testimonials Start -->
+    <section id="testimonials">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">"Best tacos in the city!!!!"</h2>
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <img class="testimonial-img" src="images/man.jpg" alt="man-profile">
+            <h5 class="testimonial-cap">Mike, New York</h5>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">"The Supreme Nachos are absolutely 🔥"</h2>
+            <h2>⭐⭐⭐⭐</h2>
+            <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+            <h5 class="testimonial-cap">Beverly, New York</h5>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- Testimonial End / Footer Start -->
+    <footer id="footer">
+
+      <a class="social-link" href="https://twitter.com/home"><i class="footer-icon fab fa-twitter"></i></a>
+      <a class="social-link" href="https://www.facebook.com/"><i class="footer-icon fab fa-facebook-f"></i></a>
+      <a class="social-link" href="https://www.instagram.com/?hl=en"><i class="footer-icon fab fa-instagram"></i></a>
+      <a class="social-link" href="https://accounts.google.com/signup/v2/webcreateaccount?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ltmpl=default&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp"><i class="footer-icon fas fa-envelope"></i></a>
+      <p>© Copyright 2020 Fake Truck Company</p>
+  
+    </footer>
+      <!-- Footer End -->
+      <!-- Google Maps API -->
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAql8Pl3zimW9YUo9QVVVAOXfSYEQ7pcZ4&callback=initMap"></script>  
+      <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+      <script src="scripts/index.js" charset="utf-8"></script>
+    </body>
+</html>

@@ -1,0 +1,363 @@
+.col-md-6, .col-sm-12 {
+    padding: 0;
+}
+/* Navbar Styles */
+.nav-link {
+    font-family: 'Oswald', sans-serif;
+    color: #88BD2B;
+    font-size: 1.75rem;
+}
+
+.nav-link:hover {
+    color: #48700C;
+}
+
+
+.navbar-brand {
+    font-family: 'Leckerli One', cursive;
+    color: #DA0101;
+    font-size: 1.5rem;
+
+}
+
+/* Title Styles */
+#title {
+    background-color: #F2C879;
+    text-align: center;
+    padding: 0;
+}
+
+.title-greeting {
+    padding: 4% 7%;
+}
+
+.title-heading {
+    font-family: 'Leckerli One', cursive;
+    color: #DA0101;
+    font-size: 6rem;
+}
+
+.title-sub {
+    font-family: 'Chelsea Market', cursive;
+    color: #88BD2B;
+    font-size: 2.5rem;
+    padding-top: 50px;
+  
+}
+
+.taco-truck {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 990px) {
+    .taco-truck {
+        width: 70%;
+    }
+}
+
+
+.title-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* Map/Contact Section */
+#contact {
+    background-color: #DA0101;
+    text-align: center;
+}
+
+.contact-col {
+    margin: 2% auto;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+@media (max-width: 767px) {
+    #map {
+        height: 400px;
+    }
+}
+
+.contact-title {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 4rem;
+    color: #88BD2B;
+}
+
+@media (max-width:1055px) {
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-text {
+        font-size: 1.5rem;
+    }
+}
+
+.contact-hr {
+    border: dashed 3px;
+    color: #88BD2B;
+    width: 80%;
+}
+
+.contact-text {
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.75rem;
+    color: #fff;
+    padding-left: 30px;
+}
+
+/* Menu Section */
+#menu {
+    text-align: center;
+    margin: 2% 12% 7%;
+}
+
+.menu-title-wrapper {
+margin: 2% auto ;}
+
+.menu-title {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: #DA0101;
+    display: inline;
+    padding: 20px auto;
+}
+
+.menu-sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.menu-hr {
+    border: dashed 3px;
+    color: #88BD2B;
+}
+
+.food-title {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.card {
+    text-align: center;
+    border-style: none;
+    border-radius: 25px;
+    width: 175px;
+    margin-bottom: 30px;
+}
+    
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 175px;
+    height: 200px;
+    display: flex;
+    border: solid 1px;
+
+}
+    
+.card-front {
+  transform: rotateY(0deg);
+  border-radius: 25px;
+}
+    
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  background-color: lightgrey;
+  border-radius: 25px;
+}
+
+.card-back-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+.food-price {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 2rem;
+}
+
+.red-bg {
+    background-color: #DA0101;
+    color: #fff;
+}
+
+.tan-bg {
+    background-color: #F2C879;
+    color: #fff;
+}
+
+.tan-hr {
+    border: dashed 3px;
+    color: #F2C879;
+}
+
+.green-hr {
+    border: dashed 3px;
+    color: #88BD2B;
+}
+
+.green-bg {
+    background-color: #88BD2B;
+    color: #fff;
+}
+
+.red-hr {
+    border: dashed 3px;
+    color: #DA0101;
+}
+
+.brown-bg {
+    background-color: #BF6E26;
+    color: #fff;
+}
+    
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+    
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.food-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px; 
+}
+
+.taco1 {
+    background-image: url("../images/taco1.jpg");
+}
+
+.taco2 {
+    background-image: url("../images/taco2.jpg");
+}
+
+.taco3 {
+    background-image: url("../images/taco3.jpg");
+}
+
+.taco4 {
+    background-image: url("../images/taco4.jpg");
+}
+
+.taco5 {
+    background-image: url("../images/taco5.jpg");
+}
+
+.taco6 {
+    background-image: url("../images/taco6.jpg");
+}
+
+.taco7 {
+    background-image: url("../images/taco7.jpg");
+}
+
+.taco8 {
+    background-image: url("../images/taco8.jpg");
+}
+
+.burrito1 {
+    background-image: url("../images/burrito1.jpg");
+}
+
+.burrito2 {
+    background-image: url("../images/burrito2.jpg");
+}
+
+.burrito3 {
+    background-image: url("../images/burrito3.jpg");
+}
+
+.burrito4 {
+    background-image: url("../images/burrito4.jpg");
+}
+
+.nacho1 {
+    background-image: url("../images/nacho1.jpg");
+}
+
+.nacho2 {
+    background-image: url("../images/nacho2.jpg");
+}
+
+.nacho3 {
+    background-image: url("../images/nacho3.jpg");
+}
+
+.nacho4 {
+    background-image: url("../images/nacho4.jpg");
+}
+
+.nacho5 {
+    background-image: url("../images/nacho5.jpg");
+}
+
+.nacho6 {
+    background-image: url("../images/nacho6.jpg");
+}
+
+
+
+
+/* Testimonial Section */
+#testimonials {
+    background-color: #88BD2B;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    margin: 7% 15%;
+}
+  
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px auto 10px;
+}
+  
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-top: 7%;
+}
+
+.testimonial-cap {
+    margin-bottom: 7%;
+}
+
+/* Footer Section */
+
+#footer {
+    text-align: center;
+}
+
+.footer-icon {
+    padding: 3% 20px;
+  }
+
+.social-link {
+    color: black;
+}
+
+.social-link:hover {
+    color: grey;
+}
+  
